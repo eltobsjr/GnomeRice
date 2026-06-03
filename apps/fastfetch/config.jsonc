@@ -22,12 +22,12 @@
         {
             "key": "│ {#32}󰌢 host    {#keys}│",
             "type": "custom",
-            "format": "ROG Strix G513RC"
+            "format": "Acer Nitro V15"
         },
         {
             "key": "│ {#33}{icon} distro  {#keys}│",
             "type": "custom",
-            "format": "Fedora 43 (Workstation Edition)"
+            "format": "Fedora 44 (Workstation Edition)"
         },
         {
             "key": "│ {#34} kernel  {#keys}│",

@@ -2,7 +2,7 @@
 
 Setup pessoal do GNOME no Fedora 44 Workstation.
 
-**Hardware:** ASUS ROG Strix G513RC · RTX 3050 · LG UltraWide 2560×1080 + tela 1080p
+**Hardware:** Acer Nitro V15 · i5-13420H · RTX 3050 6GB · 16GB RAM · 1920×1080
 
 ---
 
