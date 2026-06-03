@@ -31,6 +31,20 @@ Setup pessoal do GNOME no Fedora 44 Workstation.
 | Shell | Zsh + Oh My Zsh + Powerlevel10k |
 | FZF | Catppuccin Macchiato |
 | Spotify | Spicetify + Catppuccin Macchiato |
+| Qt apps | Kvantum + Catppuccin Macchiato Blue |
+
+## Gaming
+
+| | |
+|---|---|
+| Compatibilidade | Proton + GE-Proton (via ProtonUp-Qt) |
+| Otimização | GameMode (automático) |
+| Overlay | MangoHud (FPS, GPU, CPU, temp, RAM) |
+
+Nas propriedades de cada jogo no Steam:
+```
+mangohud gamemoderun %command%
+```
 
 ---
 
@@ -55,8 +69,10 @@ dotfiles/
 │   └── kitty/
 │       └── kitty.conf          # Config do Kitty (fonte, tema, padding...)
 ├── apps/
-│   └── fastfetch/
-│       └── config.jsonc        # Fastfetch customizado
+│   ├── fastfetch/
+│   │   └── config.jsonc        # Fastfetch customizado
+│   └── MangoHud/
+│       └── MangoHud.conf       # Overlay de gaming (FPS, GPU, CPU, temp)
 └── gtk/
     ├── gtk-3.0/gtk.css         # Cor de acento GTK3 (#1a3a6e)
     └── gtk-4.0/gtk.css         # Cor de acento GTK4 (#1a3a6e)
@@ -112,6 +128,5 @@ bash ~/dotfiles/gnome/apply-dconf.sh
 
 ## Notas
 
-- O wallpaper ativo no Open Bar é `train_and_lake.png` — ajustar o path nas configs do dconf se o usuário for diferente de `eltobsjr`
 - O wallpaper ativo no Open Bar é `train_and_lake.png` — ajustar o path nas configs do dconf se o usuário for diferente de `eltobsjr`
 - `fastfetch` está disponível mas `neofetch` é o padrão (chamado no `.zshrc`)
