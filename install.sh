@@ -19,7 +19,7 @@ echo ""
 # ── 1. Pacotes DNF ────────────────────────────────────────────────────────────
 info "Instalando pacotes..."
 sudo dnf install -y \
-    zsh lsd micro zoxide lolcat kitty fzf fastfetch \
+    zsh lsd micro zoxide lolcat kitty fzf neofetch fastfetch \
     gnome-extensions-app gnome-tweaks \
     jetbrains-mono-fonts
 success "Pacotes instalados."
