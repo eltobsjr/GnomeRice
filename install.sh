@@ -21,7 +21,8 @@ info "Instalando pacotes..."
 sudo dnf install -y \
     zsh lsd micro zoxide lolcat kitty fzf neofetch fastfetch \
     gnome-extensions-app gnome-tweaks \
-    jetbrains-mono-fonts
+    jetbrains-mono-fonts \
+    gamemode kvantum qt5ct mangohud
 success "Pacotes instalados."
 
 # ── 2. Oh My Zsh ──────────────────────────────────────────────────────────────
@@ -107,7 +108,31 @@ if [[ "$SHELL" != *"zsh"* ]]; then
     chsh -s "$(which zsh)"
 fi
 
-# ── 10. Claude Usage Indicator ────────────────────────────────────────────────
+# ── 10. GameMode ──────────────────────────────────────────────────────────────
+info "Ativando GameMode..."
+systemctl --user enable --now gamemoded 2>/dev/null || true
+success "GameMode ativo."
+
+# ── 11. Kvantum — tema Catppuccin Macchiato Blue ──────────────────────────────
+info "Instalando tema Kvantum..."
+mkdir -p "$HOME/.config/Kvantum"
+git clone --depth=1 https://github.com/catppuccin/Kvantum.git /tmp/catppuccin-kvantum 2>/dev/null || true
+cp -r /tmp/catppuccin-kvantum/themes/catppuccin-macchiato-blue "$HOME/.config/Kvantum/"
+kvantummanager --set catppuccin-macchiato-blue 2>/dev/null || true
+success "Kvantum configurado."
+
+# ── 12. MangoHud ──────────────────────────────────────────────────────────────
+info "Configurando MangoHud..."
+mkdir -p "$HOME/.config/MangoHud"
+ln -sf "$DOTFILES_DIR/apps/MangoHud/MangoHud.conf" "$HOME/.config/MangoHud/MangoHud.conf"
+success "MangoHud configurado."
+
+# ── 13. ProtonUp-Qt ───────────────────────────────────────────────────────────
+info "Instalando ProtonUp-Qt..."
+flatpak install -y flathub net.davidotek.pupgui2 2>/dev/null || true
+success "ProtonUp-Qt instalado."
+
+# ── 14. Claude Usage Indicator ────────────────────────────────────────────────
 info "Instalando Claude Usage Indicator..."
 EXT_DIR="$HOME/.local/share/gnome-shell/extensions/claude-usage@eltobsjr.gmail.com"
 if [[ ! -d "$EXT_DIR" ]]; then
@@ -117,7 +142,7 @@ if [[ ! -d "$EXT_DIR" ]]; then
 fi
 success "Claude Usage Indicator instalado."
 
-# ── 11. GNOME configs (após extensões instaladas) ─────────────────────────────
+# ── 15. GNOME configs (após extensões instaladas) ─────────────────────────────
 echo ""
 warn "PRÓXIMO PASSO MANUAL:"
 echo ""
@@ -138,5 +163,10 @@ echo "  Após instalar todas, rode:"
 echo "  bash $DOTFILES_DIR/gnome/apply-dconf.sh"
 echo ""
 echo "  Depois faça logout e login."
+echo ""
+echo "  Para gaming — nas propriedades de cada jogo no Steam adicione:"
+echo "  mangohud gamemoderun %command%"
+echo ""
+echo "  Para instalar GE-Proton: abra o ProtonUp-Qt → Adicionar versão → GE-Proton."
 echo ""
 success "Setup concluído! Siga os passos acima para finalizar o visual."

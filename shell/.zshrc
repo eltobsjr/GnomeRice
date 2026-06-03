@@ -87,3 +87,6 @@ eval "$(atuin init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 export PATH=$PATH:/home/eltobsjr/.spicetify
+
+# Qt Kvantum theme
+export QT_STYLE_OVERRIDE=kvantum
