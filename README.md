@@ -1,4 +1,4 @@
-# eltob-fedora-dotfiles
+# eltobsjr-fedora-dotfiles
 
 Setup pessoal do GNOME no Fedora 44 Workstation.
 
