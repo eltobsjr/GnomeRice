@@ -1,0 +1,16 @@
+# Extensões GNOME — eltob setup
+# Instalar via: gnome-extensions-app ou extensions.gnome.org
+# Fedora 44 / GNOME 50
+
+appindicatorsupport@rgcjonas.gmail.com          # AppIndicator — ícones de app na bandeja
+caffeine@patapon.info                           # Caffeine — impede bloqueio de tela
+just-perfection-desktop@just-perfection         # Just Perfection — tweaks do shell
+openbar@neuromorph                              # Open Bar — tema do painel (islands, azul navy)
+user-theme@gnome-shell-extensions.gcampax.github.com  # User Themes — necessário pro Open Bar
+Vitals@CoreCoding.com                           # Vitals — CPU/RAM/temp no painel
+clipboard-indicator@Dieg0Js.github.io           # Clipboard Indicator — histórico de clipboard
+blur-my-shell@aunetx                            # Blur My Shell — blur no dock e overview
+dash-to-dock@micxgx.gmail.com                   # Dash to Dock — dock inferior fixo
+forge@jmmaranan.com                             # Forge — tiling de janelas
+claude-usage@eltobsjr.gmail.com                 # Claude Usage — github.com/eltobsjr/claudeUsageIndicator
+background-logo@fedorahosted.org                # Background Logo — logo Fedora (default Fedora)
