@@ -50,7 +50,7 @@ alias fpl='flatpak list'
 
 # dnf
 alias di='sudo dnf install'
-alias du='sudo dnf upgrade'
+alias dnu='sudo dnf upgrade'
 alias dr='sudo dnf remove'
 alias ds='dnf search'
 alias dl='dnf history list'
