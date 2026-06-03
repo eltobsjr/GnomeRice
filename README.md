@@ -6,6 +6,14 @@ Setup pessoal do GNOME no Fedora 44 Workstation.
 
 ---
 
+## Screenshots
+
+![Desktop](screenshots/desktop.png)
+![Overview - Janelas](screenshots/overview-windows.png)
+![Overview - Apps](screenshots/overview-apps.png)
+
+---
+
 ## Visual
 
 | | |
