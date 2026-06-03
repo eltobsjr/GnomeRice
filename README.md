@@ -59,7 +59,7 @@ dotfiles/
 ## Instalação
 
 ```bash
-git clone https://github.com/eltobsjr/MyDotFiles.git ~/dotfiles && bash ~/dotfiles/install.sh
+git clone https://github.com/eltobsjr/GnomeRice.git ~/dotfiles && bash ~/dotfiles/install.sh
 ```
 
 O script instala tudo automaticamente: pacotes, fontes, ícones, Oh My Zsh, plugins, cursor, tema do terminal e symlinks dos configs.
