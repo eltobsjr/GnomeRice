@@ -56,15 +56,13 @@ dotfiles/
 
 ---
 
-## Instalação rápida
+## Instalação
 
 ```bash
-git clone https://github.com/<seu-usuario>/fedora-dotfiles ~/dotfiles
-cd ~/dotfiles
-bash install.sh
+git clone https://github.com/eltobsjr/MyDotFiles.git ~/dotfiles && bash ~/dotfiles/install.sh
 ```
 
-O script é interativo — pergunta antes de cada passo.
+O script instala tudo automaticamente: pacotes, fontes, ícones, Oh My Zsh, plugins, cursor, tema do terminal e symlinks dos configs.
 
 ### Passos manuais obrigatórios
 
