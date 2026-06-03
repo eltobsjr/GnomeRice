@@ -109,8 +109,8 @@ Instaladas em `~/.local/share/fonts/`:
 | `atuin` | Histórico de shell sincronizado | `Ctrl+R` |
 | `micro` | Editor de texto no terminal | `$EDITOR`, `$VISUAL` |
 | `fzf` | Fuzzy finder | `Ctrl+R`, tab completion |
-| `neofetch` | System info no login | chamado no topo do `.zshrc` |
-| `fastfetch` | System info alternativo (configurado mas não chamado) | `fastfetch` |
+| `neofetch` | System info no login | chamado no topo do `.zshrc` — padrão |
+| `fastfetch` | System info alternativo | disponível mas não chamado no shell |
 | `lolcat` | Colorir texto com gradiente | usado no banner de login |
 | `nvm` | Node Version Manager | `nvm` |
 
@@ -133,7 +133,7 @@ fpl → flatpak list
 
 # DNF
 di → sudo dnf install
-du → sudo dnf upgrade        # ⚠️ CONFLITO com comando do sistema 'du' (disk usage)
+dnu → sudo dnf upgrade
 dr → sudo dnf remove
 ds → dnf search
 dl → dnf history list
@@ -195,10 +195,7 @@ Localizados em `~/.local/share/backgrounds/`:
 
 ## Problemas identificados / Resíduos
 
-### 1. `alias du` conflita com o comando do sistema
-`alias du='sudo dnf upgrade'` sobrescreve `du` (disk usage). Renomear para `dnu`.
-
-### 2. Tiling duplo: Forge ativo + TilingShell configs salvas
+### 1. Tiling duplo: Forge ativo + TilingShell configs salvas
 Forge está ativo. Tiling Shell está desabilitado mas tem layouts e atalhos configurados no dconf.
 Os atalhos do Tiling Shell (`Super+Y`, `Super+Left` etc.) podem não funcionar no Forge.
 Ação: verificar quais atalhos do Forge estão ativos e documentar corretamente.
@@ -211,10 +208,7 @@ Podem ser removidas com `rm -rf ~/.local/share/gnome-shell/extensions/<uuid>`.
 3 variantes instaladas (`macchiato-blue-standard+default`, `-hdpi`, `-xhdpi`) + `eltob-dock`.
 O GTK usa Adwaita. Esses arquivos são resíduos. Podem ser removidos.
 
-### 5. `neofetch` chamado no `.zshrc` mas `fastfetch` também configurado
-Dois system info tools configurados. Considerar migrar para fastfetch (mais rápido e bem configurado).
-
-### 6. Config residual do `fish` em `~/.config/fish/`
+### 5. Config residual do `fish` em `~/.config/fish/`
 Só tem `conf.d/`, shell não usa fish.
 
 ### 7. Config residual do `pop-shell` em `~/.config/pop-shell/`

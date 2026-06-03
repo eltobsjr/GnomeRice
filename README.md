@@ -113,5 +113,5 @@ bash ~/dotfiles/gnome/apply-dconf.sh
 ## Notas
 
 - O wallpaper ativo no Open Bar é `train_and_lake.png` — ajustar o path nas configs do dconf se o usuário for diferente de `eltobsjr`
-- O alias `du` no `.zshrc` sobrescreve o comando do sistema `du` (disk usage) — ciente disso, renomear para `dnu` se preferir
-- `fastfetch` está configurado mas o `.zshrc` chama `neofetch` — trocar se preferir o fastfetch
+- O wallpaper ativo no Open Bar é `train_and_lake.png` — ajustar o path nas configs do dconf se o usuário for diferente de `eltobsjr`
+- `fastfetch` está disponível mas `neofetch` é o padrão (chamado no `.zshrc`)
